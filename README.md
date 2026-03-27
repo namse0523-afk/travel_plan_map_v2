@@ -1,7 +1,6 @@
-# 여행 계획 & OpenAI 챗봇 (Streamlit)
+# 여행 계획 (Streamlit)
 
-이 저장소에는 **여행 플래너**(`app.py`)와 **챗봇**(`chatbot_app.py`)이 있습니다.  
-Streamlit Community Cloud에서는 **앱마다 진입 파일(Main file)** 을 한 개만 지정할 수 있으므로, 같은 레포로 **앱을 두 번 등록**하면 됩니다.
+메인 앱은 **`app.py`** (여행 플래너)입니다.
 
 ## GitHub에 올리기
 
@@ -27,9 +26,7 @@ git push origin master
 
 1. [share.streamlit.io](https://share.streamlit.io) (Streamlit Community Cloud) 로그인 후 GitHub 권한 허용.
 2. **Create app** (또는 **New app**) → 저장소·브랜치(`master`) 선택.
-3. **Main file path** (진입 스크립트):
-   - 여행 플래너: `app.py`
-   - 챗봇만: `chatbot_app.py` (같은 레포로 앱을 **두 번** 등록하면 둘 다 배포 가능)
+3. **Main file path**: `app.py`
 4. **Advanced settings** → **Python version**: 로컬과 맞출 것(기본은 보통 3.12). 루트 `runtime.txt`는 팀이 맞추는 Python 버전 메모용입니다.
 5. 앱 **⚙ Settings → Secrets**에 아래를 붙여 넣고 저장 (`/.streamlit/secrets.toml.example` 참고). 형식은 TOML 그대로입니다.
 
@@ -48,20 +45,13 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-챗봇만:
-
-```bash
-streamlit run chatbot_app.py
-```
-
-Windows에서는 `run_app.bat`, `run_chatbot.bat`을 사용할 수 있습니다.
+Windows에서는 `run_app.bat`을 사용할 수 있습니다.
 
 ## 레포 구성 요약
 
 | 경로 | 설명 |
 |------|------|
 | `app.py` | 여행 계획 메인 앱 |
-| `chatbot_app.py` | OpenAI 챗봇 |
 | `requirements.txt` | Cloud가 설치하는 패키지 |
 | `runtime.txt` | (선택) Cloud Python 버전 |
 | `.streamlit/config.toml` | Streamlit 동작 옵션 |
