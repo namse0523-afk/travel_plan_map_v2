@@ -30,7 +30,7 @@ git push origin master
 
 | 항목 | 내용 |
 |------|------|
-| GitHub | 코드가 push된 저장소·브랜치(예: `master`) |
+| GitHub | `namse0523-afk/travel_plan_map_v2` · 브랜치 `master` |
 | Main file | 루트의 `app.py` |
 | 의존성 | 루트 `requirements.txt` (Cloud가 자동 `pip install`) |
 | Python | **Advanced settings**에서 버전 선택(로컬·`runtime.txt`와 맞추면 안전, 기본은 보통 3.12) |
@@ -39,10 +39,10 @@ git push origin master
 **순서**
 
 1. [share.streamlit.io](https://share.streamlit.io) 로그인 → GitHub 연동 허용.
-2. **Create app** → 저장소·브랜치 선택.
+2. **Create app** → **Repository**에서 `namse0523-afk/travel_plan_map_v2` 선택, **Branch**는 `master`.
 3. **Main file path**: `app.py`
-4. **Advanced settings** → **Python version** 선택.
-5. **⚙ Settings → Secrets**에 붙여 넣기 (`.streamlit/secrets.toml.example` 참고):
+4. **Advanced settings** → **Python version** (예: `3.12`, 로컬·`runtime.txt`와 맞추기).
+5. 배포 후 앱 화면 **⚙ Settings → Secrets**에 붙여 넣기 (`.streamlit/secrets.toml.example` 참고):
 
    ```toml
    OPENAI_API_KEY = "sk-proj-여기에_본인_키"
