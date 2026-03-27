@@ -1,4 +1,4 @@
-# Streamlit Cloud / 로컬 공통 기본값 (필요 시 조정)
+# Streamlit Community Cloud / 로컬 공통
 [server]
 headless = true
 
