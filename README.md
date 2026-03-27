@@ -4,7 +4,7 @@
 
 ## GitHub에 올리기
 
-현재 원격 예시: `origin` → `https://github.com/namse0523-afk/travel.git` (브랜치 `master`).
+현재 원격: `origin` → `https://github.com/namse0523-afk/travel_plan_map_v2.git` (브랜치 `master`).
 
 ```bash
 git status
